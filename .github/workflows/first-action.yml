@@ -1,8 +1,8 @@
 #WorkFlow Name Syntax
-name:'Test WorkFlow'
+name: Test WorkFlow
 
 #This 'on' syntax keyword is used for triggering so called 'actions' or 'events' for the workflow of the repository. 'workflow_dispatch' means manually triggering this workflow.
-on:workflow_dispatch
+on: workflow_dispatch
 
 #These are the jobs that will run, when a workflow is triggered. So 'jobs' keyword is required and its constant. 
 #The 'first-job' is a dummy name of the job. 
