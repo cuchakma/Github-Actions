@@ -1,0 +1,22 @@
+#WorkFlow Name Syntax
+name:Test WorkFlow
+
+#This 'on' syntax keyword is used for triggering so called 'actions' or 'events' for the workflow of the repository. 'workflow_dispatch' means manually triggering this workflow.
+on:workflow_dispatch
+
+#These are the jobs that will run, when a workflow is triggered. So 'jobs' keyword is required and its constant. 
+#The 'first-job' is a dummy name of the job. 
+#The 'runs-on' is a reserved keyword, which is allows users to specifiy a virtual enviroment
+#The 'steps' keyword allow the workflow to be executed in the 'ubuntu-latest' enviroment. (List of step values can be defined as values)
+#(-name) is defined as the Task Name
+#The 'run' keyword will print "Hello World" in the command line interface 
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Gretting
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run : echo "Goodbye" 
+      
+      
